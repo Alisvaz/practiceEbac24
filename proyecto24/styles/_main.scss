@@ -1,0 +1,28 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+
+.container-img {
+    margin: 2rem auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 2rem;
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    @include m.movil {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+}
+.imagenes {
+    width: 300px;
+    border-radius: 20px;
+    
+    
+}
